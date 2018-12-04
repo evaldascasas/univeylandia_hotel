@@ -172,20 +172,14 @@ class Client{
 
     $result = $stmt->get_result();
 
-    /* now you can fetch the results into an array - NICE */
     while ($row = $result->fetch_assoc()) {
-        // use your $myrow array as you would with any other fetch
-        var_dump($row['id_usuari'], $row['id_rol'], $row['email']);
+        //var_dump($row['id_usuari'], $row['id_rol'], $row['email']);
         $username = $row['email'];
         $userID = $row['id_usuari'];
         $rol = $row['id_rol'];
         $hash = $row['password'];
 
     }
-
-    //$stmt->bind_result($hash);
-
-    //$stmt->fetch();
 
     $isValid = password_verify($this->pass, $hash);
 

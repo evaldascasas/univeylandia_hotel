@@ -1,0 +1,152 @@
+\hypertarget{classHabitacio}{}\section{Habitacio Class Reference}
+\label{classHabitacio}\index{Habitacio@{Habitacio}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classHabitacio_a274eb9ebcca42e2635eccea7648b0c5b}{\+\_\+\+\_\+construct} ()
+\item 
+\hyperlink{classHabitacio_a545aacd985cb5b5f4d3e80169331c06d}{\+\_\+\+\_\+construct0} ()
+\item 
+\hyperlink{classHabitacio_af2fb73840620892481cdc02ee7c8613a}{\+\_\+\+\_\+construct2} (\$num\+Hab, \$tipus\+Hab)
+\item 
+\hyperlink{classHabitacio_a6df5806c3f663cfb861c8a4ba5e93f92}{crear\+Habitacio} ()
+\item 
+\hyperlink{classHabitacio_a61f54c2495b053e3623c348f770841a0}{llistar\+Habitacions\+Busqueda} ()
+\item 
+\hyperlink{classHabitacio_a1483cc2f580ff5899a1082a7923b3b84}{modificar\+Habitacio} ()
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{classHabitacio_a3cebcb1b14e07dd3449d52666f009d97}{llistar\+Habitacio} ()
+\item 
+static \hyperlink{classHabitacio_ac8583e72d94916a988cb25851b9e5e3a}{eliminar\+Habitacio} ()
+\item 
+static \hyperlink{classHabitacio_a0304b5019134fc969965c34b3e9764ce}{llistar\+Tipus\+Habitacio} ()
+\item 
+static \hyperlink{classHabitacio_a48a35e2aea2cb1a0a169750160bf1553}{llistar\+Tipus\+Habitacio\+Modificar} (\$id\+\_\+tipus\+\_\+hab)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+classe\+Habitacio.\+php\+: conté els atributs i mètodes de la classe \hyperlink{classHabitacio}{Habitacio}. Fem un include\+\_\+once de l\textquotesingle{}arxiu que conté la connexió a la BD. Classe \hyperlink{classHabitacio}{Habitacio} 
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Habitacio@{Habitacio}!\+\_\+\+\_\+construct@{\+\_\+\+\_\+construct}}
+\index{\+\_\+\+\_\+construct@{\+\_\+\+\_\+construct}!Habitacio@{Habitacio}}
+\subsubsection[{\texorpdfstring{\+\_\+\+\_\+construct()}{__construct()}}]{\setlength{\rightskip}{0pt plus 5cm}Habitacio\+::\+\_\+\+\_\+construct (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classHabitacio_a274eb9ebcca42e2635eccea7648b0c5b}{}\label{classHabitacio_a274eb9ebcca42e2635eccea7648b0c5b}
+Funció per comprovar si els contructors existeixen 
+
+\subsection{Member Function Documentation}
+\index{Habitacio@{Habitacio}!\+\_\+\+\_\+construct0@{\+\_\+\+\_\+construct0}}
+\index{\+\_\+\+\_\+construct0@{\+\_\+\+\_\+construct0}!Habitacio@{Habitacio}}
+\subsubsection[{\texorpdfstring{\+\_\+\+\_\+construct0()}{__construct0()}}]{\setlength{\rightskip}{0pt plus 5cm}Habitacio\+::\+\_\+\+\_\+construct0 (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classHabitacio_a545aacd985cb5b5f4d3e80169331c06d}{}\label{classHabitacio_a545aacd985cb5b5f4d3e80169331c06d}
+constructor buit \begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\index{Habitacio@{Habitacio}!\+\_\+\+\_\+construct2@{\+\_\+\+\_\+construct2}}
+\index{\+\_\+\+\_\+construct2@{\+\_\+\+\_\+construct2}!Habitacio@{Habitacio}}
+\subsubsection[{\texorpdfstring{\+\_\+\+\_\+construct2(\$num\+Hab, \$tipus\+Hab)}{__construct2($numHab, $tipusHab)}}]{\setlength{\rightskip}{0pt plus 5cm}Habitacio\+::\+\_\+\+\_\+construct2 (
+\begin{DoxyParamCaption}
+\item[{}]{\$num\+Hab, }
+\item[{}]{\$tipus\+Hab}
+\end{DoxyParamCaption}
+)}\hypertarget{classHabitacio_af2fb73840620892481cdc02ee7c8613a}{}\label{classHabitacio_af2fb73840620892481cdc02ee7c8613a}
+Constructor per utilitzar al crear una habitació 
+\begin{DoxyParams}{Parameters}
+{\em \$num\+Hab} & hauria de contenir el número d\textquotesingle{}habitació \\
+\hline
+{\em \$tipus\+Hab} & hauria de contenir el tipus d\textquotesingle{}habitació \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\index{Habitacio@{Habitacio}!crear\+Habitacio@{crear\+Habitacio}}
+\index{crear\+Habitacio@{crear\+Habitacio}!Habitacio@{Habitacio}}
+\subsubsection[{\texorpdfstring{crear\+Habitacio()}{crearHabitacio()}}]{\setlength{\rightskip}{0pt plus 5cm}Habitacio\+::crear\+Habitacio (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classHabitacio_a6df5806c3f663cfb861c8a4ba5e93f92}{}\label{classHabitacio_a6df5806c3f663cfb861c8a4ba5e93f92}
+Agafa les dades del formulari i les insereix en la base de dades. \begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\index{Habitacio@{Habitacio}!eliminar\+Habitacio@{eliminar\+Habitacio}}
+\index{eliminar\+Habitacio@{eliminar\+Habitacio}!Habitacio@{Habitacio}}
+\subsubsection[{\texorpdfstring{eliminar\+Habitacio()}{eliminarHabitacio()}}]{\setlength{\rightskip}{0pt plus 5cm}static Habitacio\+::eliminar\+Habitacio (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classHabitacio_ac8583e72d94916a988cb25851b9e5e3a}{}\label{classHabitacio_ac8583e72d94916a988cb25851b9e5e3a}
+Agafa el ID del modal i elimina el registre de la BD amb aquest ID \begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\index{Habitacio@{Habitacio}!llistar\+Habitacio@{llistar\+Habitacio}}
+\index{llistar\+Habitacio@{llistar\+Habitacio}!Habitacio@{Habitacio}}
+\subsubsection[{\texorpdfstring{llistar\+Habitacio()}{llistarHabitacio()}}]{\setlength{\rightskip}{0pt plus 5cm}static Habitacio\+::llistar\+Habitacio (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classHabitacio_a3cebcb1b14e07dd3449d52666f009d97}{}\label{classHabitacio_a3cebcb1b14e07dd3449d52666f009d97}
+Llista totes les habitacions que hi ha a la base de dades relacionant el ID del tipus d\textquotesingle{}habitació amb el nom del tipus d\textquotesingle{}habitació. \begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\index{Habitacio@{Habitacio}!llistar\+Habitacions\+Busqueda@{llistar\+Habitacions\+Busqueda}}
+\index{llistar\+Habitacions\+Busqueda@{llistar\+Habitacions\+Busqueda}!Habitacio@{Habitacio}}
+\subsubsection[{\texorpdfstring{llistar\+Habitacions\+Busqueda()}{llistarHabitacionsBusqueda()}}]{\setlength{\rightskip}{0pt plus 5cm}Habitacio\+::llistar\+Habitacions\+Busqueda (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classHabitacio_a61f54c2495b053e3623c348f770841a0}{}\label{classHabitacio_a61f54c2495b053e3623c348f770841a0}
+Realitza una cerca en la base de dades del valor que li introduim en la barra de cerca. \begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\index{Habitacio@{Habitacio}!llistar\+Tipus\+Habitacio@{llistar\+Tipus\+Habitacio}}
+\index{llistar\+Tipus\+Habitacio@{llistar\+Tipus\+Habitacio}!Habitacio@{Habitacio}}
+\subsubsection[{\texorpdfstring{llistar\+Tipus\+Habitacio()}{llistarTipusHabitacio()}}]{\setlength{\rightskip}{0pt plus 5cm}static Habitacio\+::llistar\+Tipus\+Habitacio (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classHabitacio_a0304b5019134fc969965c34b3e9764ce}{}\label{classHabitacio_a0304b5019134fc969965c34b3e9764ce}
+Llista els tipus d\textquotesingle{}habitació existents des de la Base de dades a un element $<$select$>$ \begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\index{Habitacio@{Habitacio}!llistar\+Tipus\+Habitacio\+Modificar@{llistar\+Tipus\+Habitacio\+Modificar}}
+\index{llistar\+Tipus\+Habitacio\+Modificar@{llistar\+Tipus\+Habitacio\+Modificar}!Habitacio@{Habitacio}}
+\subsubsection[{\texorpdfstring{llistar\+Tipus\+Habitacio\+Modificar(\$id\+\_\+tipus\+\_\+hab)}{llistarTipusHabitacioModificar($id_tipus_hab)}}]{\setlength{\rightskip}{0pt plus 5cm}static Habitacio\+::llistar\+Tipus\+Habitacio\+Modificar (
+\begin{DoxyParamCaption}
+\item[{}]{\$id\+\_\+tipus\+\_\+hab}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classHabitacio_a48a35e2aea2cb1a0a169750160bf1553}{}\label{classHabitacio_a48a35e2aea2cb1a0a169750160bf1553}
+Llista el tipus d\textquotesingle{}habitació en un modal, agafant l\textquotesingle{}element $<$option$>$ que té el registre de la base de dades. 
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$id\+\_\+tipus\+\_\+hab} & és el ID del tipus d\textquotesingle{}habitació \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\index{Habitacio@{Habitacio}!modificar\+Habitacio@{modificar\+Habitacio}}
+\index{modificar\+Habitacio@{modificar\+Habitacio}!Habitacio@{Habitacio}}
+\subsubsection[{\texorpdfstring{modificar\+Habitacio()}{modificarHabitacio()}}]{\setlength{\rightskip}{0pt plus 5cm}Habitacio\+::modificar\+Habitacio (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classHabitacio_a1483cc2f580ff5899a1082a7923b3b84}{}\label{classHabitacio_a1483cc2f580ff5899a1082a7923b3b84}
+Agafa el ID del modal i realitza un U\+P\+D\+A\+TE en el registre de la BD amb aquest ID \begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+classe\+Habitacio.\+php\end{DoxyCompactItemize}

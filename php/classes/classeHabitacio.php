@@ -1,13 +1,26 @@
 <?php
+/**
+ * classeHabitacio.php: conté els atributs i mètodes de la classe Habitacio.
+ */
+/**
+ * Fem un include_once de l'arxiu que conté la connexió a la BD.
+ */
 include_once $_SERVER['DOCUMENT_ROOT']."/php/connection.php";
-
+/**
+ * Classe Habitacio
+ */
 class Habitacio
 {
+    /** @var string hauria de contenir el ID_habitacio */
     private $idHab;
+    /** @var string hauria de contenir el numero d'habitacio */
     private $numHab;
+    /** @var string hauria de contenir el tipus d'habitacio */
     private $tipusHab;
 
-    /* CONSTRUCTORS */
+    /**
+     * Funció per comprovar si els contructors existeixen
+     */
     public function __construct()
     {
         $args = func_get_args();
@@ -18,45 +31,32 @@ class Habitacio
         }
     }
 
-    /* Constructor BUIT */
+    /**
+     * constructor buit
+     * @return void
+     */
     public function __construct0()
     {
     }
 
+    /**
+     * Constructor per utilitzar al crear una habitació
+     * @param  $numHab   hauria de contenir el número d'habitació
+     * @param  $tipusHab hauria de contenir el tipus d'habitació
+     * @return void
+     */
     public function __construct2($numHab, $tipusHab)
     {
         $this->numHab = $numHab;
         $this->tipusHab = $tipusHab;
     }
 
-    /* GETTERS */
-    public function getIdHab()
-    {
-        return $this->idHab;
-    }
-
-    public function getNumHab()
-    {
-        return $this->numHab;
-    }
-
-    public function getTipusHab()
-    {
-        return $this->tipusHab;
-    }
-
-    /* SETTERS */
-    public function setNumHab($numHab)
-    {
-        $this->numHab = $numHab;
-    }
-
-    public function setTipusHab($tipusHab)
-    {
-        $this->tipusHab = $tipusHab;
-    }
-
     /* MÈTODES */
+
+     /**
+     * Agafa les dades del formulari i les insereix en la base de dades.
+     * @return void
+     */
     public function crearHabitacio()
     {
         try {
@@ -100,7 +100,10 @@ class Habitacio
         }
     }
 
-    /* Mètode que depen de la classe, no d'un objecte */
+    /**
+     * Llista totes les habitacions que hi ha a la base de dades relacionant el ID del tipus d'habitació amb el nom del tipus d'habitació.
+     * @return void
+     */
     public static function llistarHabitacio()
     {
       try {
@@ -232,6 +235,10 @@ class Habitacio
 
     }
 
+    /**
+     * Realitza una cerca en la base de dades del valor que li introduim en la barra de cerca.
+     * @return void
+     */
     public function llistarHabitacionsBusqueda()
     {
       try {
@@ -366,7 +373,10 @@ class Habitacio
 
     }
 
-    /* Mètode modificarHabitacio --> agafa el ID del modal i modifica el registre de la BD amb aquest ID */
+    /**
+     * Agafa el ID del modal i realitza un UPDATE en el registre de la BD amb aquest ID
+     * @return void
+     */
     public function modificarHabitacio()
     {
         $conn = createConnection();
@@ -391,7 +401,10 @@ class Habitacio
     }
 
 
-    /* Mètode eliminarHabitacio --> agafa el ID del modal i elimina el registre de la BD amb aquest ID */
+    /**
+     * Agafa el ID del modal i elimina el registre de la BD amb aquest ID
+     * @return void
+     */
     public static function eliminarHabitacio()
     {
         $conn = createConnection();
@@ -414,7 +427,10 @@ class Habitacio
         $conn->close();
     }
 
-
+    /**
+     * Llista els tipus d'habitació existents des de la Base de dades a un element <select>
+     * @return void
+     */
     public static function llistarTipusHabitacio()
     {
         $conn = createConnection();
@@ -441,8 +457,10 @@ class Habitacio
     }
 
     /**
-    *
-    */
+     * Llista el tipus d'habitació en un modal, agafant l'element <option> que té el registre de la base de dades.
+     * @param  int $id_tipus_hab és el ID del tipus d'habitació
+     * @return void
+     */
     public static function llistarTipusHabitacioModificar($id_tipus_hab)
     {
       $conn = createConnection();
