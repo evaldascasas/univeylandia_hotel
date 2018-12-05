@@ -40,7 +40,7 @@ function comprovarCaptcha() {
 
 function previCaptcha() {
   if (comprovarCaptcha() == true) {
-    location.assign("https://www.w3schools.com");
+    location.assign("http://univeylandia.cat/success.html");
   }
   else {
     generarCaptcha();
