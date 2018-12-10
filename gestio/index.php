@@ -41,7 +41,7 @@ if($_SESSION['rol'] != 3) {
         </li>
       </ul>
       <ul class="navbar-nav px-3">
-        <li class="nav-item text-nowrap">
+          <li class="nav-item text-nowrap">
           <a class="nav-link" href="/logout.php"><span data-feather="log-out"></span>
             Tancar sessió
           </a>
